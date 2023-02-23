@@ -15,10 +15,11 @@
     "license": "MIT",
     "scripts": {
         "dev": "vite",
-        "build": "run-p type-check build-only",
+        "build": "run-p type-check build-only && npm run dist",
         "preview": "vite preview",
         "build-only": "vite build",
-        "type-check": "vue-tsc --noEmit"
+        "type-check": "vue-tsc --noEmit",
+        "dist": "node scripts/dist.mjs"
     },
     "dependencies": {
         "@tb-dev/prototype": "^2.0.1",
