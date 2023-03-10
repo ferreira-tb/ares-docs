@@ -1,20 +1,33 @@
+@mixin icon($image-url: '') {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    margin-top: auto;
+    margin-right: 5px;
+    margin-bottom: auto;
+    margin-left: 0;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    vertical-align: -4px;
+    background-image:  url($image-url);
+}
+
 @mixin bold-text-color($text-color: var(--color-green)) {
     font-weight: bold;
     color: $text-color;
-}
-
-@mixin to-center() {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .bold-green {
     @include bold-text-color(var(--color-green));
 }
 
-.loading-text {
-    @include to-center();
-    @include bold-text-color(var(--color-green));
+.bold-red {
+    @include bold-text-color(var(--color-red));
+}
+
+.to-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
