@@ -22,7 +22,7 @@
         "dist": "node scripts/dist.mjs"
     },
     "dependencies": {
-        "@tb-dev/prototype": "^2.0.1",
+        "@tb-dev/prototype": "^2.0.2",
         "@tb-dev/prototype-dom": "^3.0.0",
         "@tb-dev/ts-guard": "^2.0.0",
         "@tb-dev/ts-guard-dom": "^1.0.0",
